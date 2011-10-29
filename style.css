@@ -1,0 +1,171 @@
+* { margin:0; padding:0 }
+.clear { clear: both; }
+
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* html .group, *:first-child+html .group { zoom: 1; } /* First selector = IE6, Second Selector = IE 7 */
+
+ul { list-style-type: none; }
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid grey;
+	padding: 30px;
+}
+
+ header{ border-bottom: 1px solid #454545;}
+.logo {
+	float:left;
+}
+ul#nav{
+	padding-top: 12px;
+}
+ul#nav li {
+	float: right;
+	margin: 0 10px 0 10px;
+}
+ul#nav li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #9fa1a4;
+	/* CSS3 Transition Magic */
+	-webkit-transition: all .3s ease-out;
+	-moz-transition:all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out ;
+}
+ul#nav li a:hover{
+	color:#76cdcb;
+}
+#people-list{
+	padding: 100px;
+	border-bottom: 1px solid #454545;
+}
+
+/* people in main page */
+.pLinks .people-1{
+	background-position: 0 0;
+}
+.pLinks .people-2{
+	background-position: -27px 0;
+}
+.pLinks .people-3{
+	background-position: -54px 0;
+}
+.pLinks .people-4{
+	background-position: -81px 0;
+}
+.pLinks .people-5{
+	background-position: -108px 0;
+}
+.pLinks .people-1:hover{
+	background-position: 0 -44px;
+}
+.pLinks .people-2:hover{
+	background-position: -27px -44px;
+}
+.pLinks .people-3:hover{
+	background-position: -54px -44px;
+}
+.pLinks .people-4:hover{
+	background-position: -81px -44px;
+}
+.pLinks .people-5:hover{
+	background-position: -108px -44px;
+}
+
+
+#people-list ul{
+	padding:20px 0;
+}
+#people-list li {
+	float: left;
+	margin: 0 10px 0 10px;
+}
+ #people-list li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #5f5f5f;
+	
+ }
+  #output-box { padding: 10px 0; margin:10px 0; overflow: hidden; }
+ .pLinks ul{
+	padding:20px 0;
+}
+ .pLinks li {
+	float: left;
+	margin: 0 3px;
+}
+ .pLinks li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #5f5f5f;
+	background: url(images/sprite.png) no-repeat ;
+	height: 44px;width: 27px;
+	display: block;
+	text-indent: -999px;
+ }
+  .active { color: red; }
+  a.inactive { color: grey; }
+  
+  /* structure */
+  aside { float: left; width: 35%; border: 1px solid grey; }
+  section { float: right; width: 50%; }
+  footer { clear: both }
+  
+  
+  .pStory { padding: 45px 0; margin-bottom: 20px; height: 380px;}
+  
+  #profile-1, #profile-2 {  clear: both; overflow: hidden; }
+  
+  /* Image Story*/
+  .image-story { border: 1px solid green; padding: 20px; margin-top: 90px;}
+  
+  .pNav { position: relative; margin: 25px 0;  }
+  .pPrevNext a{
+    background: url(images/sprite.png) no-repeat ;
+	height: 27px;width: 15px;
+	display: block;}
+	
+  .pPrevNext .prev{
+	background-position: 0 -115px;
+  }
+  .pPrevNext .next{
+	background-position: -15px -115px;
+  }
+  .pDet{
+	padding-left: 20px;color: #9fa1a4;
+  }
+  a.prev, a.next { position: absolute; top: 0; }
+  a.prev { left: 0; }
+  a.next { left: 120px; }
+  .pCur { padding: 0 40px; }
+  .pCur a{ text-decoration: none;}
+  .pPrevNext a{ text-decoration: none;text-indent: -999px;}
+  .pDet a{text-decoration: none; color: #9fa1a4;}
+  .pDet1{ width: 100px;text-align:center}
+  .pDet2{ width: 155px;text-align:center}
+  .pLI{ background: url(images/linkdin.png) no-repeat 0 0; height:17px; width: 16px; display: block; float: left;}
+  .pMail,.pMob{ float:left;}
+  .pMob{ padding-left: 24px;}
+  
+  /* Footer */
+  footer ul { list-style-type: none; float: right; }
+  footer ul li { float: left;color: #9fa1a4; }
+  footer ul li a{ text-decoration: none;color: #9fa1a4; }
+   footer { position: absolute; bottom: 48px; left: 678px; width: 280px;}
+  
+  /* Image Story */
+  ul.main-list { padding: 200px 200px; }
+  ul.main-list a { display: block; width: 50px ; color:#fff; text-decoration: none;}
+  ul.main-list li { margin: 10px; position: relative; }
+  ul.main-list li li { margin-left: 0 }
+  ul.main-list li a { padding: 5px; background: blue; }
+  ul.main-list li li a { background: green; }
+  ul.main-list li { float: left; }
+  ul.top-list li, ul.bottom-list li { float: none; }
+  ul.main-list li ul { position: absolute; }
+  ul.top-list { bottom: 35px; }
+  ul.bottom-list { top: 35px; }
